@@ -96,11 +96,30 @@ experience, content authenticity, and networked social interaction
 
 - [Contributing instructions](https://sublinks.org/docs/contributing.html)
 
+### Developer Setup
+
+#### Linux
+
+TBD
+
+#### macOS
+
+TBD
+
+#### Windows
+
+TBD
+
 ### Docker Setup (for dependencies)
 
 To use this Docker setup you first need to complete a few steps:
 
 - Run `git submodule update --init --recursive` to pull down all submodules
+- Create and configure your `.env` file:
+  - `A=FOO`
+  - `B=BAR`
+  - `etc`
+  - This section might need us to re-work
 - `API_HOST=host.docker.internal docker-compose -f docker/docker-compose.backend.yaml up [-d]`
     - `-d` to run in detached mode (don't include the [] brackets, they indicate
       being optional)
